@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#209910"
+            android:text="日排行" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#209910"
+            android:text="周排行" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:textSize="30sp"
+                android:textColor="#209910"
+                android:text="排名"
+                android:layout_weight="0.23" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:textSize="30sp"
+                android:textColor="#209910"
+                android:text="用户名"
+                android:layout_weight="0.37" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_weight="0.29"
+                android:text="时长"
+                android:textColor="#209910"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:textSize="30sp"
+                android:textColor="#209910"
+                android:text="点赞数" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"/>
+
+</LinearLayout>
